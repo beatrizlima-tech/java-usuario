@@ -1,50 +1,50 @@
 # Cadastro de Usuários em Java
 
-Projeto desenvolvido para praticar conceitos de programação orientada a objetos em Java através de um sistema de cadastro de usuários.
+Projeto desenvolvido em Java para gerenciamento de usuários, aplicando conceitos de Programação Orientada a Objetos (POO) e organização em camadas.
 
 ## Sobre o Projeto
 
-A aplicação permite realizar operações de cadastro e gerenciamento de usuários, aplicando conceitos fundamentais da linguagem Java, organização de código e manipulação de dados.
+A aplicação permite realizar operações de cadastro e gerenciamento de usuários, utilizando uma estrutura organizada com controllers, entities, repositories e enums.
 
 ## Tecnologias Utilizadas
 
 * Java
 * Programação Orientada a Objetos (POO)
 
-## Funcionalidades
-
-* Cadastrar usuários
-* Listar usuários cadastrados
-* Buscar informações de usuários
-* Atualizar dados de usuários
-* Remover usuários
-
 ## Estrutura do Projeto
 
 ```text
-src/
-├── model
-├── service
-├── repository
-└── main
+src
+├── controllers
+├── entities
+├── enums
+├── main
+└── repositories
 ```
 
-## Objetivos de Aprendizagem
+### Responsabilidades das Camadas
 
-Durante o desenvolvimento deste projeto foram praticados:
+* **controllers:** controle das operações da aplicação.
+* **entities:** representação das entidades do sistema.
+* **enums:** enumerações utilizadas no projeto.
+* **repositories:** armazenamento e manipulação dos dados.
+* **main:** ponto de entrada da aplicação.
+
+## Conceitos Praticados
 
 * Classes e objetos
 * Encapsulamento
-* Métodos
 * Coleções
-* Organização de código
-* Boas práticas de desenvolvimento Java
+* Organização em camadas
+* Métodos e atributos
+* Enumerações
+* Boas práticas de programação Java
 
 ## Como Executar
 
 1. Clone o repositório.
-2. Abra o projeto em sua IDE Java de preferência.
-3. Execute a classe principal da aplicação.
+2. Abra o projeto em uma IDE Java (IntelliJ IDEA, Eclipse ou VS Code).
+3. Execute a classe principal localizada na pasta `main`.
 
 ## Autora
 
