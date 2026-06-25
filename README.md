@@ -1,69 +1,48 @@
-# 👤 Cadastro de Usuários com Exportação XML
+# 👤 Cadastro de Usuários
 
-Projeto desenvolvido em Java para cadastro de usuários utilizando conceitos de Programação Orientada a Objetos (POO), herança, enumerações e manipulação de arquivos XML.
-
-A aplicação permite cadastrar usuários classificados como Operador ou Administrador, além de diferenciá-los entre Pessoa Física e Pessoa Jurídica, exportando os dados para arquivos XML gerados automaticamente.
+![Java](https://img.shields.io/badge/Java-21-red?style=for-the-badge\&logo=openjdk)
+![XML](https://img.shields.io/badge/XML-Export-orange?style=for-the-badge)
+![OOP](https://img.shields.io/badge/POO-Object%20Oriented-blue?style=for-the-badge)
+![Build](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+# 📌 Sobre o projeto
+
+O **Cadastro de Usuários** é uma aplicação desenvolvida em **Java** para cadastro de usuários utilizando conceitos de Programação Orientada a Objetos (POO), herança, polimorfismo, enumerações e manipulação de arquivos XML.
+
+A aplicação permite cadastrar usuários classificados como **Operador** ou **Administrador**, diferenciando-os entre **Pessoa Física** e **Pessoa Jurídica**, com exportação automática das informações para arquivos XML.
+
+---
+
+# 🚀 Funcionalidades
+
+* Cadastro de usuários
+* Geração automática de identificadores UUID
+* Classificação entre Operador e Administrador
+* Cadastro de Pessoa Física
+* Cadastro de Pessoa Jurídica
+* Exportação automática para arquivos XML
+* Interface gráfica utilizando JOptionPane
+
+---
+
+# 🧱 Tecnologias utilizadas
 
 * Java
-* Java Swing (JOptionPane)
 * XML
+* Java Swing (JOptionPane)
 * UUID
 * Programação Orientada a Objetos (POO)
 
 ---
 
-## 📋 Funcionalidades
-
-### Cadastro de Usuário
-
-* Geração automática de identificador único (UUID)
-* Cadastro de login
-* Cadastro de senha
-
-### Classificação de Usuário
-
-O sistema permite classificar o usuário como:
-
-* Operador
-* Administrador
-
-### Tipo de Usuário
-
-Após a classificação, o usuário pode ser identificado como:
-
-#### Pessoa Física
-
-* Nome
-* CPF
-
-#### Pessoa Jurídica
-
-* Razão Social
-* CNPJ
-
-### Exportação de Dados
-
-Os dados cadastrados são exportados automaticamente para arquivos XML.
-
-Exemplos:
+# 🏗️ Estrutura do projeto
 
 ```text
-usuario_UUID.xml
-PessoaFisica_UUID.xml
-PessoaJuridica_UUID.xml
-```
+src/
 
----
-
-## 🏗️ Estrutura do Projeto
-
-```text
-src
-│
 ├── controllers
 │   └── UsuarioController
 │
@@ -81,7 +60,7 @@ src
 
 ---
 
-## 🔄 Fluxo da Aplicação
+# 🔄 Fluxo da aplicação
 
 ```text
 Cadastro do Usuário
@@ -98,56 +77,75 @@ Tipo de Usuário
 Coleta dos Dados
         │
         ▼
-Geração dos Arquivos XML
+Exportação para XML
 ```
 
 ---
 
-## 📂 Arquivos Gerados
+# 📂 Arquivos gerados
 
-Os arquivos XML são armazenados localmente no diretório:
+Após o cadastro, o sistema gera automaticamente arquivos XML contendo os dados cadastrados.
+
+Exemplos:
 
 ```text
-C:\temp\
+usuario_UUID.xml
+PessoaFisica_UUID.xml
+PessoaJuridica_UUID.xml
 ```
 
-### Exemplo de XML
-
-```xml
-<usuario>
-   <id>UUID</id>
-   <login>usuario</login>
-   <senha>senha123</senha>
-</usuario>
-```
+Os arquivos são armazenados no diretório configurado pela aplicação.
 
 ---
 
-## 📚 Conceitos Aplicados
+# ⚙️ Como executar o projeto
 
-Durante o desenvolvimento foram praticados:
+## 1. Clone o repositório
+
+```bash
+git clone https://github.com/beatrizlima-tech/java-usuario.git
+```
+
+## 2. Abra o projeto
+
+Importe o projeto em uma IDE Java, como IntelliJ IDEA ou Eclipse.
+
+## 3. Execute a aplicação
+
+Execute a classe principal para iniciar o cadastro de usuários.
+
+---
+
+# 📚 Conceitos aplicados
 
 * Programação Orientada a Objetos
 * Herança
+* Polimorfismo
 * Encapsulamento
 * Enumerações
 * UUID
-* Manipulação de Arquivos
-* Exportação XML
+* Manipulação de arquivos XML
 * Interface gráfica com JOptionPane
 * Organização em camadas
 
 ---
 
-## 🎯 Objetivo
+# 📌 Melhorias futuras
 
-Projeto desenvolvido para consolidar conceitos fundamentais de orientação a objetos, modelagem de entidades e geração de arquivos XML utilizando Java.
+* Persistência em banco de dados
+* Interface gráfica em JavaFX
+* Exportação para JSON
+* Validação de dados
+* Integração com Spring Boot
 
 ---
 
-## 👩‍💻 Desenvolvedora
+# 👩‍💻 Autora
 
-**Beatriz Lima**
+Desenvolvido por **Beatriz Lima**
 
-GitHub:
+🔗 GitHub
 https://github.com/beatrizlima-tech
+
+💼 LinkedIn
+https://www.linkedin.com/in/beatrizlima-tech
